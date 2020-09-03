@@ -8,7 +8,6 @@ for i in range(0, 101):
         lists.append(str(i))
         continue
 
-    # flgオブジェクトを作成
     flgs = FizzBuzz(i)
     item = ""
 
