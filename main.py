@@ -27,7 +27,9 @@ for i in range(0, 101):
     else:
         lists.append(item)
 
-    # リストの中身を表示する
-    print(lists[i])
+# タプルとkey-Valueに変換
+fb_tp = ({i: lists[i] for i in range(0, 101)})
 
-print(lists)
+# 出力
+for key in fb_tp:
+    print(fb_tp[key])
