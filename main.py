@@ -17,7 +17,7 @@ for i in range(0, 101):
         item += "Fizz"
 
     # ５の倍数である場合はitemに"Buzz"を追加する
-    flgs.setBuzzFlg
+    flgs.setBuzzFlg()
     if (flgs.getBuzzFlg()):
         item += "Buzz"
 
