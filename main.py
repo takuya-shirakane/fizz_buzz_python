@@ -12,13 +12,13 @@ for i in range(0, 101):
     item = ""
 
     # ３の倍数である場合はitemに"Fizz"を追加する
-    flgs.fizz()
-    if (flgs.fizzFlg):
+    flgs.setFizzFlg()
+    if (flgs.getFizzFlg()):
         item += "Fizz"
 
     # ５の倍数である場合はitemに"Buzz"を追加する
-    flgs.buzz()
-    if (flgs.buzzFlg):
+    flgs.setBuzzFlg
+    if (flgs.getBuzzFlg()):
         item += "Buzz"
 
     # itemが空文字の場合はiをlistsに追加し、それ以外はitemを追加する

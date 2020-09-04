@@ -1,15 +1,23 @@
 class FizzBuzz():
     def __init__(self, number):
-        self.number = number
-        self.fizzFlg = 0
-        self.buzzFlg = 0
+        self._number = number
+        self._fizzFlg = 0
+        self._buzzFlg = 0
 
     # fizzを判定するメソッド
-    def fizz(self):
-        if (self.number % 3 == 0):
-            self.fizzFlg = 1
+    def setFizzFlg(self):
+        if (self._number % 3 == 0):
+            self._fizzFlg = 1
 
     # buzzを判定するクラスメソッド
-    def buzz(self):
-        if (self.number % 5 == 0):
-            self.buzzFlg = 1
+    def setBuzzFlg(self):
+        if (self._number % 5 == 0):
+            self._buzzFlg = 1
+
+    # fizzFlgを取得するメソッド
+    def getFizzFlg(self):
+        return self._fizzFlg
+
+    # buzzFlgを取得するメソッド
+    def getBuzzFlg(self):
+        return self._buzzFlg
