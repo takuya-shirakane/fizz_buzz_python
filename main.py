@@ -1,35 +1,26 @@
 from fizz_buzz import FizzBuzz
 
-lists = []
+# 定数
+MIN = 1
+MAX = 100
 
-for i in range(0, 101):
-    # iが０の場合
-    if (i == 0):
-        lists.append(str(i))
-        continue
+def main():
+    lists = []
 
-    flgs = FizzBuzz(i)
-    item = ""
+    for i in range(MIN, MAX + 1):
+        fizzBuzz = FizzBuzz(i)
 
-    # ３の倍数である場合はitemに"Fizz"を追加する
-    flgs.setFizzFlg()
-    if (flgs.getFizzFlg()):
-        item += "Fizz"
+        # 3の倍数チェック
+        fizzBuzz.check_fizz()
 
-    # ５の倍数である場合はitemに"Buzz"を追加する
-    flgs.setBuzzFlg()
-    if (flgs.getBuzzFlg()):
-        item += "Buzz"
+        # 5の倍数チェック
+        fizzBuzz.check_buzz()
 
-    # itemが空文字の場合はiをlistsに追加し、それ以外はitemを追加する
-    if (item == ""):
-        lists.append(str(i))
-    else:
-        lists.append(item)
+        # リストに格納
+        lists.append(fizzBuzz.get_value())
 
-# タプルとkey-Valueに変換
-fb_tp = ({i: lists[i] for i in range(0, 101)})
+    # コンソールに出力
+    print("\n".join(lists))
 
-# 出力
-for key in fb_tp:
-    print(fb_tp[key])
+if __name__ == "__main__":
+    main()
