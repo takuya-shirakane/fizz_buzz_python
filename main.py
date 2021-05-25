@@ -5,9 +5,11 @@ MIN = 1
 MAX = 100
 
 def main():
-    lists = []
+    values = []
 
+    # 出力値設定ループ
     for i in range(MIN, MAX + 1):
+        # インスタンス生成
         fizzBuzz = FizzBuzz(i)
 
         # 3の倍数チェック
@@ -17,10 +19,10 @@ def main():
         fizzBuzz.check_buzz()
 
         # リストに格納
-        lists.append(fizzBuzz.get_value())
+        values.append(fizzBuzz.get_value())
 
     # コンソールに出力
-    print("\n".join(lists))
+    print("\n".join(values))
 
 if __name__ == "__main__":
     main()
