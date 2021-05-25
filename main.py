@@ -12,14 +12,8 @@ def main():
         # インスタンス生成
         fizzBuzz = FizzBuzz(i)
 
-        # 3の倍数チェック
-        fizzBuzz.check_fizz()
-
-        # 5の倍数チェック
-        fizzBuzz.check_buzz()
-
         # リストに格納
-        values.append(fizzBuzz.get_value())
+        values.append(fizzBuzz.get_result())
 
     # コンソールに出力
     print("\n".join(values))
