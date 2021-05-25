@@ -16,5 +16,6 @@ class FizzBuzz():
     # 格納する値を返す
     def get_value(self):
         if not self._value:
-            self._value = str(self._number)
+            # self._valueが空文字の場合はnumberを文字列として返す
+            return str(self._number)
         return self._value
