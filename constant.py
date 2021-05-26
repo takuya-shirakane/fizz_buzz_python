@@ -1,4 +1,3 @@
-
 class Constant():
     """定数クラス"""
     MIN = 1

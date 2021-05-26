@@ -18,7 +18,7 @@ class FizzBuzz():
             return
                 result(str):FizzBuzzの結果
         """
-        # self._valueが空文字の場合はnumberを文字列として返す
+        # self.__resultが空文字の場合はself.__numberを文字列として返す
         if not self.__result:
             return str(self.__number)
         return self.__result
